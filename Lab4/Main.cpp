@@ -4,6 +4,8 @@
 
 using namespace std;
 
+// COMMENT
+
 int main(){
 	task1();
 	return 0;
