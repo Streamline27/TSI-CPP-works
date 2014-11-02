@@ -2,8 +2,16 @@
 
 using namespace std;
 
+// WE VERY ENJOY ALL YOU ARE DOING
+// PLEASE CONTINUE THIS WORK
+//      ||  ||
+//      ||  ||
+//  \\         //
+//   \\       //
+//    ((=====))
+
 int task1(){
-	return 0;
+	return 1;
 }
 
 int task2(){
