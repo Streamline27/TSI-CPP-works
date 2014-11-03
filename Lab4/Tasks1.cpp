@@ -11,7 +11,6 @@ using namespace std;
 //   \\       //
 //    ((=====))
 
-list<int> primes = { 2, 3, 5, 7 };
 
 int task1(){
 	return task2();

@@ -17,5 +17,8 @@ using namespace std;
 //
 int main(){
 	task1();
+	list<int> l = primeCreator(7);
+	for (list<int>::iterator it = l.begin(); it != l.end(); ++it)
+		cout << ' ' << *it;
 	return 0;
 }
