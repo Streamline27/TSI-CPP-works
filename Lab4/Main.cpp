@@ -4,7 +4,7 @@
 
 using namespace std;
 
-// COMMENT
+// COMMENT DELETED
 
 int main(){
 	task1();
