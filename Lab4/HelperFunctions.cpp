@@ -20,3 +20,7 @@ list<int> primeCreator(int n) {
 	}
 	return l;
 }
+
+int factorial(int a){
+	return a > 1 ? a*factorial(a - 1) : 1;
+}
