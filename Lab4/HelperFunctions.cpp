@@ -8,6 +8,7 @@ void readInt(char* message, int& n){
 	scanf_s("%d", n);
 }
 
+// This is function returns N'h prime number
 list<int> primeCreator(int n) {
 	list<int> l = { 2 };
 	bool check = true;
