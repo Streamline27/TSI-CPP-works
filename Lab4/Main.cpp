@@ -8,6 +8,13 @@ using namespace std;
 //    CHA
 //       GE
 //         S!!!!!!!!!!!!!!!!
+//
+//
+//
+//
+//
+//
+//
 int main(){
 	task1();
 	return 0;
