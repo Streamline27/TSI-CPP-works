@@ -1,6 +1,5 @@
 #include <stdio.h>
-#include "hfunct.h"
-#include "taskf.h"
+#include <list>
 
 using namespace std;
 
