@@ -1,5 +1,6 @@
 #include "taskf.h"
 
+
 using namespace std;
 
 // WE VERY ENJOY ALL YOU ARE DOING
@@ -10,15 +11,18 @@ using namespace std;
 //   \\       //
 //    ((=====))
 
+list<int> primes = { 2, 3, 5, 7 };
+
 int task1(){
-	return 1;
+	return task2();
 }
 
 int task2(){
-	return 0;
+	return task3();
 }
 
 int task3(){
+	cout << "BOOM HAPPENED!!!";
 	return 0;
 }
 

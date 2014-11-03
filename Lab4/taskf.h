@@ -7,6 +7,9 @@
 // used dependencies
 #include "hfunct.h"
 #include <iostream>
+#include <list>
+
+using namespace std;
 
 //========================
 // used functionality
