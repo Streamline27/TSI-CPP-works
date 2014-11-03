@@ -4,8 +4,18 @@
 
 using namespace std;
 
-// COMMENT DELETED
-
+//ME
+//  GA
+//    CHA
+//       GE
+//         S!!!!!!!!!!!!!!!!
+//
+//
+//
+//
+//
+//
+//
 int main(){
 	task1();
 	return 0;
