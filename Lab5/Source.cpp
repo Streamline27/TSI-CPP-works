@@ -41,11 +41,10 @@ int main(){
 	int day = 0, currentYear = 1900;
 	while (currentYear < year)
 	{
-		if (isLeapYear(currentYear)) day = day + 2;
+		if (isLeapYear(currentYear)) day+=2;
 		else day++;
 		day = day % 7;
 		currentYear++;
-
 	}
 
 	printf("First day of the year is: %s \n", daysOfWeek[day]);
