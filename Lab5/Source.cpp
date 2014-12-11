@@ -48,7 +48,6 @@ int main(){
 	}
 
 	printf("First day of the year is: %s \n", daysOfWeek[day]);
-
-	system("PAUSE;");
+	system("PAUSE;"); 
 	return 0;
 }
