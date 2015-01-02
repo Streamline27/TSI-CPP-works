@@ -50,22 +50,23 @@ void zeroSort(double* a){
 
 double findSum(double* a){
 	//Finding first occurrence of negative number
-	int i;
-	for (i = 0; (i < n) && !(a[i]<0); i++);
-	if (i == n){
+	int first;
+	for (first = 0; (first < n) && (a[first] > 0); first++);
+	if (first == n){
 		printf("First negative is undetected...\n");
 		return 0;
 	}
-	//Running till we find the second negative number
-	int j; double sum = 0;
-	for (j = ++i; j < n; j++){
-		if (a[j]<0) break;
-		sum += a[j];
-	}
-	if (j == n){
-		printf("Second negative is undetected...\n");
+	//Finding last occurrence of negative number
+	int last;
+	for (last = n - 1; (last >= 0) && (a[last] > 0); last--);
+	if (last == first){
+		printf("Last negative is undetected...\n");
 		return 0;
 	}
+	//Finding sum
+	double sum = 0;
+	for (int i = first+1; i < last; i++) sum += a[i];
+
 	return sum;
 }
 
