@@ -4,11 +4,11 @@
 #include<time.h>
 
 using namespace std;
-//===================================
-//========== Helper functions =======
 
 int n; //Size of array
 
+//===================================
+//========== Helper functions =======
 void readInt(char* message, int &n){
 	printf(message);
 	scanf_s("%d", &n);
