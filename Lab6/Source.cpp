@@ -4,7 +4,11 @@
 #include<time.h>
 
 using namespace std;
-int n;
+//===================================
+//========== Helper functions =======
+
+int n; //Size of array
+
 void readInt(char* message, int &n){
 	printf(message);
 	scanf_s("%d", &n);
@@ -15,11 +19,6 @@ void printArray(double* a){
 	printf("\n");
 }
 
-double min(double* a){
-	double min = a[0];
-	for (int i = 1; i < n; i++) if (a[i] < min) min = a[i];
-	return min;
-}
 
 double* initManual(int n){
 	double* a = new double[n];
@@ -38,6 +37,10 @@ double* initAuto(int n,int threshold){
 	return a;
 }
 
+//==============================
+//==== Task functions ==========
+
+// Task 3. (Zero sorting array)
 void swap(double* a, double* b){
 	double tmp = *a;
 	*a = *b;
@@ -47,7 +50,14 @@ void zeroSort(double* a){
 	double* lo = a;
 	for (double* hi = a; hi < a+n; hi++) if (*hi == 0) swap(hi, lo++);
 }
+// Task 1. (Finding minimum)
+double min(double* a){
+	double min = a[0];
+	for (int i = 1; i < n; i++) if (a[i] < min) min = a[i];
+	return min;
+}
 
+// Task 2. (Sum between two negatives)
 double findSum(double* a){
 	//Finding first occurrence of negative number
 	int first;
