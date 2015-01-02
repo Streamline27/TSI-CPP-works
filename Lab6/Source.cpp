@@ -41,14 +41,9 @@ double* initAuto(int n,int threshold){
 //==== Task functions ==========
 
 // Task 3. (Zero sorting array)
-void swap(double* a, double* b){
-	double tmp = *a;
-	*a = *b;
-	*b = tmp;
-}
 void zeroSort(double* a){
 	double* lo = a;
-	for (double* hi = a; hi < a+n; hi++) if (*hi == 0) swap(hi, lo++);
+	for (double* hi = a; hi < a + n; hi++) if (*hi == 0) {*hi = *lo; *lo = 0;}
 }
 // Task 1. (Finding minimum)
 double min(double* a){
