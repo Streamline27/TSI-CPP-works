@@ -61,20 +61,22 @@ double min(double* a){
 double findSum(double* a){
 	//Finding first occurrence of negative number
 	int first;
-	for (first = 0; (first < n) && (a[first] > 0); first++);
+	for (first = 0; (first < n) && (a[first] >= 0); first++);
 	if (first == n){
 		printf("First negative is undetected...\n");
 		return 0;
 	}
 	//Finding last occurrence of negative number
 	int last;
-	for (last = n - 1; (last >= 0) && (a[last] > 0); last--);
+	for (last = n - 1; (last >= 0) && (a[last] >= 0); last--);
 	if (last == first){
 		printf("Last negative is undetected...\n");
 		return 0;
 	}
 	//Finding sum
 	double sum = 0;
+	cout << first << endl;
+	cout << last << endl;
 	for (int i = first+1; i < last; i++) sum += a[i];
 
 	return sum;
@@ -90,5 +92,6 @@ int main(){
 	zeroSort(a);
 	printf("3)Array after negative sort: \n");
 	printArray(a);
+	main();
 	return 0;
 }
