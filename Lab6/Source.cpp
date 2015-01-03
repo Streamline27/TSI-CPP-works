@@ -76,7 +76,7 @@ double findSum(double* a){
 }
 
 int main(){
-	readInt("Enter number of elements in array: ", n);
+	readInt("Enter number of elements: ", n);
 	//double* a = initAuto(n, 2);
 	double* a = initManual(n);
 	printArray(a);
@@ -85,6 +85,6 @@ int main(){
 	zeroSort(a);
 	printf("3)Array after negative sort: \n");
 	printArray(a);
-	main();
+	system("Pause");
 	return 0;
 }
