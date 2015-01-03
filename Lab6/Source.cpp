@@ -70,15 +70,13 @@ double findSum(double* a){
 	}
 	//Finding sum
 	double sum = 0;
-	cout << first << endl;
-	cout << last << endl;
 	for (int i = first+1; i < last; i++) sum += a[i];
 
 	return sum;
 }
 
 int main(){
-	readInt("Enter N: ", n);
+	readInt("Enter number of elements in array: ", n);
 	//double* a = initAuto(n, 2);
 	double* a = initManual(n);
 	printArray(a);
