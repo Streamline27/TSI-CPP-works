@@ -28,6 +28,7 @@ public:
 		cout << "Enter price: ";
 		cin >> computer.price;
 		computers.push_back(computer);
+		cin.clear();
 
 	}
 	Computer get(int n){
@@ -47,5 +48,6 @@ int main(){
 	ComputerList computerList;
 	computerList.addManual();
 	computerList.addManual();
+	system("PAUSE");
 	return 0;
 }
