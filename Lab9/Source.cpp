@@ -134,10 +134,7 @@ void dataDelete(){
 
 	// Writting new data to file
 	f.open(fileName, ios::binary | ios::trunc | ios::out);
-	for (int i = 0; i < numComputers; i++)
-	{
-		f.write((char*)(computers+i), sizeof(Computer));
-	}
+	f.write((char*)(computers), sizeof(Computer)*numComputers);
 
 	system("CLS");
 	cout << endl <<"  Deleted " << oldNum - numComputers << " records in total." << endl << endl;
